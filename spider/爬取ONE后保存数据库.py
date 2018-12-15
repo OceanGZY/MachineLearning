@@ -9,7 +9,7 @@ class GetONETEXT(object):
         self.BASE_URL = "http://wufazhuce.com/one/"
 
     def get_all_urls(self):
-        for n in range(14, 2261):
+        for n in range(14, 16):
             url = self.BASE_URL + str(n)
             self.get_all_pages(url)
 
@@ -38,7 +38,7 @@ class GetONETEXT(object):
             text_days = soup.select('#main-container .one-cita-wrapper .one-pubdate .dom')
             for image_url in image_urls:
                 url= image_url.get('src')
-                # print(url)
+                print(url)
 
             for text_number in text_numbers:
                 textNum = text_number.text.strip()
@@ -60,10 +60,11 @@ class GetONETEXT(object):
                 day = text_day.text.strip()
                 # print(day)
 
-            self.save_all(url,textNum,imgAuth,textCont,mon,day)
+            # self.save_all(url,textNum,imgAuth,textCont,mon,day)
+            print(url,textNum,imgAuth,textCont,mon,day)
 
     def create_data_table(self):
-        db = pymysql.connect('10.211.55.5', 'root', 'gzy5211314', 'test')
+        db = pymysql.connect('10.211.55.5', 'root', '数据库密码', 'test')
         cursor = db.cursor()
         cursor.execute("DROP TABLE IF EXISTS YOUONE")
 
@@ -115,5 +116,5 @@ class GetONETEXT(object):
 
 if __name__ == "__main__":
     getOneText = GetONETEXT()
-    getOneText.create_data_table()
+    # getOneText.create_data_table()
     getOneText.get_all_urls()
