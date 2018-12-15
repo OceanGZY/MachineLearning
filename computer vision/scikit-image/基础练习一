@@ -1,0 +1,22 @@
+# -*- coding:utf-8 -*-
+'''
+    auth:YSilhouette
+    date:2018/11/14
+    version :0.1.0
+'''
+from skimage import data,io
+import matplotlib.pyplot as plt
+import os
+
+camera = data.camera()
+print(type(camera))
+print(camera.shape)
+
+img = io.imread('3.jpg')
+# plt.figure('3l.jpg')
+plt.imshow(img)
+plt.axis('off')
+plt.show()
+
+
+
