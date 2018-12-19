@@ -1,3 +1,4 @@
 data analysis/database
 venv3.7
 .DS_Store
+.vscode
