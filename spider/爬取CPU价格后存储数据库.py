@@ -21,7 +21,7 @@ class CPUPrice(object):
         try:
             response = requests.get(url)
             if response.status_code ==200:
-                self.get_cpus(response.content)
+                self.parse_pages(response.content)
             else:
                 print("请求失败",response.status_code)
         except Exception as e:
@@ -29,25 +29,29 @@ class CPUPrice(object):
             return None
 
 
-    def get_cpus(self,html):
+    def parse_pages(self,html):
         if html:
             soup = BeautifulSoup(html,'lxml')
             # print(soup)
             cpu_names = soup.select('#globalGoodsList .itemGrid .item .name')
             cpu_prices = soup.select('#globalGoodsList .itemGrid .item .price .goodsPrice')
+            self.parse_cpu(cpu_names,cpu_prices)
 
-            for cpu_name_item in cpu_names:
-                cpuName = cpu_name_item.text.strip()
-                print(cpuName)
 
-            for cpu_price_item in cpu_prices:
-                cpuPrice = cpu_price_item.text.strip()
-                print(cpuPrice)
-            # self.save_all(cpuName,cpuPrice)
+    def parse_cpu(self,cpuNames,cpuPrices):
+
+        for cpu_name_item in cpuNames:
+            cpuName = cpu_name_item.text.strip()
+            print(cpuName)
+
+        for cpu_price_item in cpuPrices:
+            cpuPrice = cpu_price_item.text.strip()
+            print(cpuPrice)
+
 
 
     def create_database_table(self):
-        db = pymysql.connect('10.211.55.5','root','gzy5211314','test')
+        db = pymysql.connect('192.168.0.103','root','gzy5211314','test')
         cursor =db.cursor()
         cursor.execute("DROP TABLE IF EXISTS CPUPRICE")
         sql_create_database_table = """CREATE TABLE CPUPRICE(
@@ -68,8 +72,9 @@ class CPUPrice(object):
         db.close()
 
 
-    def save_all(self,cpuNames,cpuPrices):
-        db = pymysql.connect('10.211.55.5', 'root', 'gzy5211314', 'test')
+
+    def save_cpudetial(self,cpuNames,cpuPrices):
+        db = pymysql.connect('192.168.0.103', 'root', 'gzy5211314', 'test')
         cursor = db.cursor()
 
         sql_insert_data = """INSERT INTO CPUPRICE(
@@ -86,7 +91,6 @@ class CPUPrice(object):
 
         cursor.close()
         db.close()
-
 
 
 if __name__ =="__main__":

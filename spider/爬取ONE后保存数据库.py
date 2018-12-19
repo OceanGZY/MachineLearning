@@ -36,9 +36,10 @@ class GetONETEXT(object):
             texts = soup.select('#main-container .one-cita-wrapper .one-cita')
             text_mons = soup.select('#main-container .one-cita-wrapper .one-pubdate .may')
             text_days = soup.select('#main-container .one-cita-wrapper .one-pubdate .dom')
+
             for image_url in image_urls:
                 url= image_url.get('src')
-                print(url)
+                # print(url)
 
             for text_number in text_numbers:
                 textNum = text_number.text.strip()
@@ -61,7 +62,7 @@ class GetONETEXT(object):
                 # print(day)
 
             # self.save_all(url,textNum,imgAuth,textCont,mon,day)
-            print(url,textNum,imgAuth,textCont,mon,day)
+            # print(url,textNum,imgAuth,textCont,mon,day)
 
     def create_data_table(self):
         db = pymysql.connect('10.211.55.5', 'root', '数据库密码', 'test')
