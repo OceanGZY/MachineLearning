@@ -5,6 +5,17 @@
     date:2018-10-01
     version:v0.1.0
 '''
+'''
+    array:      将输入数据(列表、元组、数组)转换为ndarray
+    asarray:    将输入转换为ndarray 
+    arange:     返回一个ndarry,不是列表
+    ones、ones_like:     根据形状和dtype创建全1数组
+    zeros、zeros_like:   根据形状和dtype创建全0数组
+    empty、empty_like:   创建新数组，但不填充数值
+    eye、identify:       创建单位矩阵
+'''
+
+
 
 import numpy as np
 data =np.random.rand(2,3)
