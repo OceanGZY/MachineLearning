@@ -31,6 +31,7 @@ print('--------------')
 # 创建ndarray
 # 列表转为ndarray
 # 一维数组
+# 列表转数组
 data1 = [6,7.5,8,0,1]
 arr1 =np.array(data1)
 print(arr1)
