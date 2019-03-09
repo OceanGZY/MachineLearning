@@ -2,6 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe1301f-5438-43cf-98c1-b6f2a0244326" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas 分类数据详解.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas-IO-操作.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas中MySQL数据库的读取和导出.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas可视化.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas实用函数使用方法2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas实用函数使用方法3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas实用函数的使用方法1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas时间处理.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas时间序列详解.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas计算工具.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas选择操作.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Python数值计算及正则表达式.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（折线图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（散点图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（条形图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（树地图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（热力图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（直方图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（雷达图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（面积图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（饼图）.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matploylib（箱线图）.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,10 +58,14 @@
     <session id="69230246">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -54,11 +80,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="ipynb" value="1" />
           <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="IPNB" value="1" />
           <entry key="Python" value="7" />
         </counts>
       </usages-collector>
@@ -72,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data analysis/pandas入门/pandas文本数据处理.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="178">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -127,8 +155,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="989" />
-    <option name="width" value="935" />
+    <option name="x" value="1005" />
+    <option name="width" value="919" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,18 +180,18 @@
             <path>
               <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="data analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="pandas入门" type="462c0819:PsiDirectoryNode" />
+              <item name="deep learning" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/blog" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -465,9 +492,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="989" y="0" width="935" height="1057" extended-state="0" />
+    <frame x="1005" y="0" width="919" height="1057" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4952381" weight="0.27085716" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4952381" visible="true" weight="0.34225845" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" sideWeight="0.50476193" side_tool="true" weight="0.20600858" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -479,10 +506,10 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292517" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48569384" weight="0.27089337" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5143061" side_tool="true" weight="0.32789117" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3292517" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5143061" side_tool="true" weight="0.32789117" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32867885" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.48569384" visible="true" weight="0.2733189" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -726,10 +753,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data analysis/pandas入门/Python数值计算及正则表达式.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data analysis/pandas入门/pandas文本数据处理.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="178">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
