@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe1301f-5438-43cf-98c1-b6f2a0244326" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas 分类数据详解.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas-IO-操作.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas中MySQL数据库的读取和导出.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas可视化.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas实用函数使用方法2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas实用函数使用方法3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas实用函数的使用方法1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas时间处理.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas时间序列详解.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas计算工具.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Pandas选择操作.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/Python数值计算及正则表达式.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（折线图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（散点图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（条形图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（树地图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（热力图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（直方图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（雷达图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（面积图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matplotlib（饼图）.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data analysis/pandas入门/matploylib（箱线图）.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data analysis/连接数据库测试.py" beforeDir="false" afterPath="$PROJECT_DIR$/data analysis/连接数据库测试.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,24 +48,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1543" />
+          <entry key="py" value="1553" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1543" />
+          <entry key="Python" value="1553" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -98,13 +76,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data analysis/pandas入门/pandas文本数据处理.py">
+        <entry file="file://$PROJECT_DIR$/data analysis/连接数据库测试.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -131,7 +106,6 @@
         <option value="$PROJECT_DIR$/spider/爬取今日头条图片.py" />
         <option value="$PROJECT_DIR$/deep learning/数据操作/创建NDArray.py" />
         <option value="$PROJECT_DIR$/data analysis/分析链家二手房数据.py" />
-        <option value="$PROJECT_DIR$/data analysis/连接数据库测试.py" />
         <option value="$PROJECT_DIR$/data analysis/ch02.py" />
         <option value="$PROJECT_DIR$/data analysis/MovieLens 1M数据集.py" />
         <option value="$PROJECT_DIR$/data analysis/爬取ONE后保存数据库.py" />
@@ -145,6 +119,7 @@
         <option value="$PROJECT_DIR$/data analysis/pandas入门/pandas基本功详解.py" />
         <option value="$PROJECT_DIR$/data analysis/pandas入门/pandas缺失值处理.py" />
         <option value="$PROJECT_DIR$/data analysis/pandas入门/pandas文本数据处理.py" />
+        <option value="$PROJECT_DIR$/data analysis/连接数据库测试.py" />
       </list>
     </option>
   </component>
@@ -177,11 +152,6 @@
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
               <item name="data analysis" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="deep learning" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -195,15 +165,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\YSilhouette\Documents\GitHub\MachineLearning\data analysis\pandas入门" />
+      <recent name="$PROJECT_DIR$/data analysis/database" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/computer vision/scikit-image" />
       <recent name="$PROJECT_DIR$/data analysis" />
       <recent name="$PROJECT_DIR$/spider" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/deep learning/数据操作" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data analysis/database" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -493,8 +464,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1005" y="0" width="919" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4952381" visible="true" weight="0.34225845" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4952381" visible="true" weight="0.34225845" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" sideWeight="0.50476193" side_tool="true" weight="0.20600858" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -509,7 +481,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5143061" side_tool="true" weight="0.32789117" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32867885" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.48569384" visible="true" weight="0.2733189" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.48569384" visible="true" weight="0.2733189" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -559,13 +531,6 @@
     <entry file="file://$PROJECT_DIR$/spider/爬取cpu价格并保存.py" />
     <entry file="file://$PROJECT_DIR$/data analysis/database/datasets/fec/P00000001-ALL.csv" />
     <entry file="file://$PROJECT_DIR$/data analysis/ch02.py" />
-    <entry file="file://$PROJECT_DIR$/data analysis/连接数据库测试.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data analysis/分析链家二手房数据.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -762,11 +727,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data analysis/pandas入门/pandas文本数据处理.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="464">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data analysis/连接数据库测试.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
