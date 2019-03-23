@@ -1,15 +1,15 @@
-# coding:utf-8'''    auth:gzy    date:2018/12/13'''
+# coding:utf-8 ''' auth:gzy    date:2018/12/13'''
 import pymysql
 import requests
 from bs4 import BeautifulSoup
 
-
+# 定义一个类
 class GetONETEXT(object):
     def __init__(self):
         self.BASE_URL = "http://wufazhuce.com/one/"
 
     def get_all_urls(self):
-        for n in range(14, 16):
+        for n in range(14, 30):
             url = self.BASE_URL + str(n)
             self.get_all_pages(url)
 
@@ -61,11 +61,12 @@ class GetONETEXT(object):
                 day = text_day.text.strip()
                 # print(day)
 
-            # self.save_all(url,textNum,imgAuth,textCont,mon,day)
+            #保存到数据库
+            self.save_all(url,textNum,imgAuth,textCont,mon,day)
             # print(url,textNum,imgAuth,textCont,mon,day)
 
     def create_data_table(self):
-        db = pymysql.connect('10.211.55.5', 'root', '数据库密码', 'test')
+        db = pymysql.connect('127.0.0.1', 'root', '','mydata')
         cursor = db.cursor()
         cursor.execute("DROP TABLE IF EXISTS YOUONE")
 
@@ -91,7 +92,7 @@ class GetONETEXT(object):
 
     def save_all(self,url,textNum,imgAuth,textCont,mon,day):
         # print(url,textNum,imgAuth,textCont,mon,day)
-        db = pymysql.connect('10.211.55.5','root','数据库密码','test')
+        db = pymysql.connect('127.0.0.1','root','','mydata')
         print('连接成功')
         cursor =db.cursor()
 
@@ -116,6 +117,7 @@ class GetONETEXT(object):
 
 
 if __name__ == "__main__":
+    # 创建一个实例
     getOneText = GetONETEXT()
-    # getOneText.create_data_table()
+    getOneText.create_data_table()
     getOneText.get_all_urls()
