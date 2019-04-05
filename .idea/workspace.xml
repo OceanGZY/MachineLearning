@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe1301f-5438-43cf-98c1-b6f2a0244326" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/spider/爬取趣图/爬取趣图.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/spider/爬取CPU价格后存储数据库.py" afterPath="$PROJECT_DIR$/spider/爬取CPU价格后存储数据库.py" />
-      <change beforePath="$PROJECT_DIR$/spider/爬取ONE后保存数据库.py" afterPath="$PROJECT_DIR$/spider/爬取one/爬取ONE后保存数据库.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +23,7 @@
     <SUITE FILE_PATH="coverage/MachineLearning$MovieLens_1M.coverage" NAME="MovieLens 1M数据集 Coverage Results" MODIFIED="1544534019207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data analysis" />
     <SUITE FILE_PATH="coverage/MachineLearning$jsjson.coverage" NAME="js转为json Coverage Results" MODIFIED="1553598962617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/爬取并保存LOL英雄的皮肤" />
     <SUITE FILE_PATH="coverage/MachineLearning$ch02.coverage" NAME="ch02 Coverage Results" MODIFIED="1544533128980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data analysis" />
-    <SUITE FILE_PATH="coverage/MachineLearning$.coverage" NAME="一维数据集 Coverage Results" MODIFIED="1552224545699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data analysis/数据可视化/二维绘图" />
+    <SUITE FILE_PATH="coverage/MachineLearning$.coverage" NAME="爬取趣图 Coverage Results" MODIFIED="1554478329884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/爬取趣图" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -86,7 +84,35 @@
     <favorites_list name="MachineLearning" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="爬取趣图.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spider/爬取趣图/爬取趣图.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <folding>
+                <element signature="e#40#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="爬取ONE后保存数据库.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spider/爬取one/爬取ONE后保存数据库.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-149">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <folding>
+                <element signature="e#50#64#0" expanded="true" />
+                <marker date="1554470576000" expanded="true" signature="2464:2491" ph="DROP TABLE I... " />
+                <marker date="1554470576000" expanded="true" signature="2525:3012" ph="CREATE TABLE... YOUONE" />
+                <marker date="1554470576000" expanded="true" signature="3467:3754" ph="INSERT INTO YOUONE... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,6 +167,7 @@
         <option value="$PROJECT_DIR$/spider/爬取并保存LOL英雄的皮肤/爬取并保存LOL英雄皮肤.py" />
         <option value="$PROJECT_DIR$/spider/爬取并保存ONE每日一话/爬取ONE后保存数据库.py" />
         <option value="$PROJECT_DIR$/spider/爬取CPU价格后存储数据库.py" />
+        <option value="$PROJECT_DIR$/spider/爬取趣图/爬取趣图.py" />
       </list>
     </option>
   </component>
@@ -151,10 +178,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="57" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,6 +216,12 @@
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
               <item name="spider" type="462c0819:PsiDirectoryNode" />
               <item name="爬取one" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="爬取趣图" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.爬取ONE后保存数据库">
+  <component name="RunManager" selected="Python.爬取趣图">
     <configuration name="一维数据集" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -488,6 +521,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="爬取趣图" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/爬取趣图" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MachineLearning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/爬取趣图/爬取趣图.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="爬取并保存LOL英雄皮肤" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -545,25 +597,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pandas文本数据处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data analysis/pandas入门" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MachineLearning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data analysis/pandas入门/pandas文本数据处理.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="pandas基本功详解" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -604,18 +637,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.一维数据集" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pandas文本数据处理" />
-      <item index="2" class="java.lang.String" itemvalue="Python.爬取并保存LOL英雄皮肤" />
-      <item index="3" class="java.lang.String" itemvalue="Python.js转为json" />
-      <item index="4" class="java.lang.String" itemvalue="Python.爬取ONE后保存数据库" />
+      <item index="1" class="java.lang.String" itemvalue="Python.爬取并保存LOL英雄皮肤" />
+      <item index="2" class="java.lang.String" itemvalue="Python.js转为json" />
+      <item index="3" class="java.lang.String" itemvalue="Python.爬取ONE后保存数据库" />
+      <item index="4" class="java.lang.String" itemvalue="Python.爬取趣图" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.爬取ONE后保存数据库" />
-        <item index="1" class="java.lang.String" itemvalue="Python.爬取并保存LOL英雄皮肤" />
-        <item index="2" class="java.lang.String" itemvalue="Python.js转为json" />
-        <item index="3" class="java.lang.String" itemvalue="Python.一维数据集" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pandas文本数据处理" />
+        <item index="0" class="java.lang.String" itemvalue="Python.爬取趣图" />
+        <item index="1" class="java.lang.String" itemvalue="Python.爬取ONE后保存数据库" />
+        <item index="2" class="java.lang.String" itemvalue="Python.爬取并保存LOL英雄皮肤" />
+        <item index="3" class="java.lang.String" itemvalue="Python.js转为json" />
+        <item index="4" class="java.lang.String" itemvalue="Python.一维数据集" />
       </list>
     </recent_temporary>
   </component>
@@ -645,16 +678,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="23" width="1440" height="830" extended-state="0" />
+    <frame x="57" y="23" width="1440" height="829" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33061224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33106267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30329043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27038628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -677,40 +711,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data analysis/pandas入门/pandas入门.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/爬取并保存ONE每日一话/爬取ONE后保存数据库.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data analysis/ch02.py" />
-    <entry file="file://$PROJECT_DIR$/data analysis/分析链家二手房数据.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="40" column="109" lean-forward="false" selection-start-line="40" selection-start-column="109" selection-end-line="40" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data analysis/MovieLens 1M数据集.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -995,24 +1001,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/爬取one/爬取ONE后保存数据库.py">
+    <entry file="file://$PROJECT_DIR$/spider/爬取CPU价格后存储数据库.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
           <folding>
-            <element signature="e#50#64#0" expanded="true" />
+            <element signature="e#64#79#0" expanded="true" />
+            <marker date="1554470641000" expanded="true" signature="1514:1543" ph="DROP TABLE I... " />
+            <marker date="1554470641000" expanded="true" signature="1585:1855" ph="CREATE TABLE... CPUPRICE" />
+            <marker date="1554470641000" expanded="true" signature="2275:2417" ph="INSERT INTO CPUPRICE... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/爬取CPU价格后存储数据库.py">
+    <entry file="file://$PROJECT_DIR$/spider/爬取趣图/imgaes_preview.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/爬取趣图/imgaes_preview_src.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/爬取趣图/imgaes_preview_srcs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="1720" column="57" lean-forward="false" selection-start-line="761" selection-start-column="58" selection-end-line="1720" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/爬取趣图/imgaes_preview_urls.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1094">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/爬取趣图/爬取趣图.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
-            <marker date="1554470641000" expanded="true" signature="1514:1543" ph="DROP TABLE I... " />
-            <marker date="1554470641000" expanded="true" signature="1585:1855" ph="CREATE TABLE... CPUPRICE" />
-            <marker date="1554470641000" expanded="true" signature="2275:2417" ph="INSERT INTO CPUPRICE... " />
+            <element signature="e#40#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/爬取one/爬取ONE后保存数据库.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="e#50#64#0" expanded="true" />
+            <marker date="1554470576000" expanded="true" signature="2464:2491" ph="DROP TABLE I... " />
+            <marker date="1554470576000" expanded="true" signature="2525:3012" ph="CREATE TABLE... YOUONE" />
+            <marker date="1554470576000" expanded="true" signature="3467:3754" ph="INSERT INTO YOUONE... " />
           </folding>
         </state>
       </provider>
