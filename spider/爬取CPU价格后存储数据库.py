@@ -51,7 +51,7 @@ class CPUPrice(object):
 
 
     def create_database_table(self):
-        db = pymysql.connect('192.168.0.103','root','gzy5211314','test')
+        db = pymysql.connect('192.168.0.103','root','','test')
         cursor =db.cursor()
         cursor.execute("DROP TABLE IF EXISTS CPUPRICE")
         sql_create_database_table = """CREATE TABLE CPUPRICE(
@@ -74,7 +74,7 @@ class CPUPrice(object):
 
 
     def save_cpudetial(self,cpuNames,cpuPrices):
-        db = pymysql.connect('192.168.0.103', 'root', 'gzy5211314', 'test')
+        db = pymysql.connect('192.168.0.103', 'root', '', 'test')
         cursor = db.cursor()
 
         sql_insert_data = """INSERT INTO CPUPRICE(
