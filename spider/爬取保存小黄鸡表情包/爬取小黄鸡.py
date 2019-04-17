@@ -1,5 +1,10 @@
 #!/usr/bin/python
 # -*-coding:utf-8 -*-
+'''
+    author:gzy
+    date:20190417
+    version:V0.1.0
+'''
 
 import requests
 from bs4 import BeautifulSoup
