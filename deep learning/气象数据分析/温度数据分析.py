@@ -63,9 +63,9 @@ x10_faenza = df_faenza['day']
 
 ### 把日期数据转换为datetime 格式
 day_ferrara = [parser.parse(x) for x in x1_ferrara]
-day_milano = [parser.parse(x) for x in x2_milano]
+day_milano = [parser.parse(x) for x in x2_milano]  #数据存在缺失
 day_mantova = [parser.parse(x) for x in x3_mantova]
-day_ravenna = [parser.parse(x) for x in x4_ravenna]
+day_ravenna = [parser.parse(x) for x in x4_ravenna]  # 数据存在缺失
 day_torino = [parser.parse(x) for x in x5_torino]
 day_asti = [parser.parse(x) for x in x6_asti]
 day_bologna = [parser.parse(x) for x in x7_bologna]
@@ -73,7 +73,16 @@ day_piacenza = [parser.parse(x) for x in x8_piacenza]
 day_cesena = [parser.parse(x) for x in x9_cesena]
 day_faenza = [parser.parse(x) for x in x10_faenza]
 
-print(day_ferrara)
+# print(day_ferrara)
+# print(day_milano)  #数据存在缺失
+# print(day_mantova)
+# print(day_ravenna)  # 数据存在缺失
+# print(day_torino)
+# print(day_asti)
+# print(day_bologna)
+# print(day_piacenza)
+# print(day_cesena)
+# print(day_faenza)
 
 ### 调用subplot函数，fig图像对象，ax坐标轴对象
 fig,ax = plt.subplots()
@@ -85,4 +94,69 @@ hours = mdates.DateFormatter('%H:%M')
 ax.xaxis.set_major_formatter(hours)
 
 ### 画出图像， day_ferrara是X轴数据，y1_ferrara是Y轴数据， 'r'代表是red 红色
+ax.plot(day_ravenna,y4_ravenna,'r',day_ferrara,y1_ferrara,'r',day_cesena,y9_cesena,'r')
+ax.plot(day_asti,y6_asti,'g',day_torino,y5_torino,'g',day_piacenza,y8_piacenza,'g')
 
+# plt.show()
+
+
+
+# 收集10个城市的最高温和最低温，用线性图 表示气温最值点和离海远近之间的关系
+## dist  城市距离海边距离的列表
+dist = [
+    df_ravenna['dist'][0],
+    df_cesena['dist'][0],
+    df_faenza['dist'][0],
+    df_ferrara['dist'][0],
+    df_bologna['dist'][0],
+    df_mantova['dist'][0],
+    df_piacenza['dist'][0],
+    df_milano['dist'][0],
+    df_asti['dist'][0],
+    df_torino['dist'][0]
+]
+
+print(dist)
+
+## temp_max 存放城市的最高温度的列表
+temp_max = [
+    df_ravenna['temp'].max(),
+    df_cesena['temp'].max(),
+    df_faenza['temp'].max(),
+    df_ferrara['temp'].max(),
+    df_bologna['temp'].max(),
+    df_mantova['temp'].max(),
+    df_piacenza['temp'].max(),
+    df_milano['temp'].max(),
+    df_asti['temp'].max(),
+    df_torino['temp'].max()
+]
+# print(temp_max)
+
+
+## temp_min 存放城市的最低温度的列表
+temp_min = [
+    df_ravenna['temp'].min(),
+    df_cesena['temp'].min(),
+    df_faenza['temp'].min(),
+    df_ferrara['temp'].min(),
+    df_bologna['temp'].min(),
+    df_mantova['temp'].min(),
+    df_piacenza['temp'].min(),
+    df_milano['temp'].min(),
+    df_asti['temp'].min(),
+    df_torino['temp'].min()
+]
+
+# print(temp_min)
+
+fig1,ax1 = plt.subplots()
+ax1.plot(dist,temp_max,'ro')
+
+# plt.show()
+
+
+from sklearn.svm import SVR
+
+# dist1 是靠近海的城市集合
+# dist2 是远离海的集合
