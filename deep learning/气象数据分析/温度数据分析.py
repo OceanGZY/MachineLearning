@@ -116,7 +116,7 @@ dist = [
     df_torino['dist'][0]
 ]
 
-print(dist)
+# print(dist)
 
 ## temp_max 存放城市的最高温度的列表
 temp_max = [
@@ -160,3 +160,37 @@ from sklearn.svm import SVR
 
 # dist1 是靠近海的城市集合
 # dist2 是远离海的集合
+dist1 = dist[0:5]
+dist2 = dist[5:10]
+
+# 改变列表的结构
+dist1 = [[x] for x in dist1]
+dist2 = [[x] for x in dist2]
+print(dist1)
+print(dist2)
+
+
+temp_max1 = temp_max[0:5]
+temp_max2 = temp_max[5:10]
+# 调用SVR函数，在参数中规定使用线性拟合函数
+svr_lin1 = SVR(kernel='linear',C = 1e3)
+svr_lin2 = SVR(kernel='linear',C = 1e3)
+
+# 加入数据进行拟合
+svr_lin1.fit(dist1,temp_max1)
+svr_lin2.fit(dist2,temp_max2)
+
+
+xp1 = np.arange(10,100,10).reshape((9,1))
+xp2 = np.arange(50,400,50).reshape((7,1))
+yp1 = svr_lin1.predict(xp1)
+yp2 = svr_lin2.predict(xp2)
+
+fig2,ax2 = plt.subplots()
+ax2.set_xlim(0,400)
+
+# 画出图像
+ax2.plot(xp1,yp1,c='b',label = 'strong sea effect')
+ax2.plot(xp2,yp2,c='g',label = 'weak sea effect')
+ax2.plot(dist,temp_max,'ro')
+plt.show()
