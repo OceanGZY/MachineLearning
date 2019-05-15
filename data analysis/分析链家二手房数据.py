@@ -151,8 +151,8 @@ grid.add_legend()
 # floor特征
 f,ax12=plt.subplots(1,1,figsize=(20,5))
 sns.countplot(x='Floor',data=df,ax=ax12)
-ax12.set_title("房屋户型",)
-ax12.set_xlabel("",)
-ax12.set_ylabel("",)
+ax12.set_title("房屋户型",fontproperties=siyuanheiti)
+ax12.set_xlabel("楼层数",fontproperties=siyuanheiti)
+ax12.set_ylabel("数量",fontproperties=siyuanheiti)
 
 plt.show()
