@@ -140,4 +140,19 @@ ax11.set_xlabel("是否有电梯",fontproperties=siyuanheiti)
 ax11.set_ylabel("房价",fontproperties=siyuanheiti)
 plt.yticks(fontproperties=siyuanheiti)
 plt.xticks(fontproperties=siyuanheiti)
+
+# 年限特征分析
+# year特征分析
+grid = sns.FacetGrid(df,row='Elevator',col='Renovation',palette='seismic',size=4)
+grid.map(plt.scatter,'Year','Price')
+grid.add_legend()
+
+
+# floor特征
+f,ax12=plt.subplots(1,1,figsize=(20,5))
+sns.countplot(x='Floor',data=df,ax=ax12)
+ax12.set_title("房屋户型",)
+ax12.set_xlabel("",)
+ax12.set_ylabel("",)
+
 plt.show()
