@@ -12,3 +12,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 data = pd.read_csv('./adult.data.csv')
+print(data.head())
+'''
+    问题一：数据集中有多少男性和女性
+'''
+print(data['sex'].value_counts())
