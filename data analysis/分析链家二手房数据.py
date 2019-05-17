@@ -143,7 +143,7 @@ plt.xticks(fontproperties=siyuanheiti)
 
 # 年限特征分析
 # year特征分析
-grid = sns.FacetGrid(df,row='Elevator',col='Renovation',palette='seismic',size=4)
+grid = sns.FacetGrid(df,row='Elevator',col='Renovation',palette='seismic',height=4)
 grid.map(plt.scatter,'Year','Price')
 grid.add_legend()
 
