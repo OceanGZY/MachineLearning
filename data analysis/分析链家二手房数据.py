@@ -77,7 +77,7 @@ sns.kdeplot(df['Size'],shade=True,ax=ax4)
 ax4.set_title("北京各大区二手房大小分布",fontproperties=siyuanheiti)
 sns.regplot(x='Size',y='Price',data=df,ax=ax5)
 ax5.set_title("北京各大区二手房大小与价格分布",fontproperties=siyuanheiti)
-# plt.show()
+plt.show()
 
 
 # # 面积小于10的
@@ -155,4 +155,4 @@ ax12.set_title("房屋户型",fontproperties=siyuanheiti)
 ax12.set_xlabel("楼层数",fontproperties=siyuanheiti)
 ax12.set_ylabel("数量",fontproperties=siyuanheiti)
 
-plt.show()
+# plt.show()
