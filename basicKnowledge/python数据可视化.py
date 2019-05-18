@@ -103,3 +103,10 @@ plt.show()
 # matplotlib库的scatter()方法绘制散点图
 plt.scatter(df['Total day minutes'],df['Total night minutes'])
 plt.show()
+# seaborn的joinplot()方法在绘制散点图的同时绘制两张直方图
+sns.jointplot(x='Total day minutes',y='Total night minutes',data=df,kind='scatter')
+plt.show()
+
+# seaborn的joinplot()方法在绘制平滑过的散点直方图
+sns.jointplot('Total day minutes','Total night minutes',data=df,kind='kde',color='g')
+plt.show()
