@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 sns.set()
 # 继续使用电信离网数据
 df = pd.read_csv('./telecom_churn.csv')
@@ -24,13 +25,13 @@ print(df.head())
             密度图：核密度图，可视为直方图的平滑版
 '''
 # 使用DataFrame的hist()方法绘制直方图
-features = ['Total day minutes','Total intl calls']
-df[features].hist(figsize=(10,4))
+features = ['Total day minutes', 'Total intl calls']
+df[features].hist(figsize=(10, 4))
 plt.show()
 
 #  创建密度图
-df[features].plot(kind='density',subplots=True,layout=(1,2),
-                  sharex=False,figsize=(10,4),legend=False,title=features)
+df[features].plot(kind='density', subplots=True, layout=(1, 2),
+                  sharex=False, figsize=(10, 4), legend=False, title=features)
 plt.show()
 
 # 使用seaborn 的distplot() ，同时显示直方图和密度图
@@ -41,16 +42,16 @@ plt.show()
     箱线图：主要是箱子，须，和单独的数据点（离散值）    
 '''
 # 使用seaborn的 boxplot()绘制箱型图
-sns.boxplot(x='Total intl calls',data=df)
+sns.boxplot(x='Total intl calls', data=df)
 plt.show()
 
 '''
     提琴型图：聚焦于平滑后的整体分布
 '''
 # 使用seaborn的violinplot()
-f,axes = plt.subplots(1,2,sharey=True,figsize=(6,4))
-sns.boxplot(data=df['Total intl calls'],ax=axes[0])
-sns.violinplot(data=df['Total intl calls'],ax=axes[1])
+f, axes = plt.subplots(1, 2, sharey=True, figsize=(6, 4))
+sns.boxplot(data=df['Total intl calls'], ax=axes[0])
+sns.violinplot(data=df['Total intl calls'], ax=axes[1])
 plt.show()
 '''
     数据描述
@@ -77,9 +78,9 @@ print(df['Churn'].value_counts())
         - 直方图的 X 轴是一个笛卡尔坐标轴；条形图的顺序则没有事先定义。        
 '''
 # seabornd的countplot()，绘制条形图
-f,axes1 =plt.subplots(nrows=1,ncols=2,figsize=(12,4))
-sns.countplot(x='Churn',data=df,ax=axes1[0])
-sns.countplot(x='Customer service calls',data=df,ax=axes1[1])
+f, axes1 = plt.subplots(nrows=1, ncols=2, figsize=(12, 4))
+sns.countplot(x='Churn', data=df, ax=axes1[0])
+sns.countplot(x='Customer service calls', data=df, ax=axes1[1])
 plt.show()
 
 '''
@@ -94,19 +95,42 @@ plt.show()
 # 使用DataFrame的corr()计算每对特征键的相关性生成相关矩阵
 # 使用seaborn的heatmap()把相关矩阵渲染
 ### 丢弃非数值变量
-numerical = list(set(df.columns) - set(['State', 'International plan', 'Voice mail plan','Area code', 'Churn', 'Customer service calls']))
+numerical = list(set(df.columns) - set(
+    ['State', 'International plan', 'Voice mail plan', 'Area code', 'Churn', 'Customer service calls']))
 ### 计算和绘图
 corr_matrix = df[numerical].corr()
 sns.heatmap(corr_matrix)
 plt.show()
 
 # matplotlib库的scatter()方法绘制散点图
-plt.scatter(df['Total day minutes'],df['Total night minutes'])
+plt.scatter(df['Total day minutes'], df['Total night minutes'])
 plt.show()
 # seaborn的joinplot()方法在绘制散点图的同时绘制两张直方图
-sns.jointplot(x='Total day minutes',y='Total night minutes',data=df,kind='scatter')
+sns.jointplot(x='Total day minutes', y='Total night minutes', data=df, kind='scatter')
 plt.show()
 
 # seaborn的joinplot()方法在绘制平滑过的散点直方图
-sns.jointplot('Total day minutes','Total night minutes',data=df,kind='kde',color='g')
+sns.jointplot('Total day minutes', 'Total night minutes', data=df, kind='kde', color='g')
 plt.show()
+
+# seaborn的pairplot()绘制散点矩阵图
+sns.pairplot(df[numerical])
+plt.show()
+
+# seaborn的 lmplot()方法hue参数指定感兴趣的特征
+sns.lmplot('Total day minutes','Total night minutes',data=df,hue='Churn',fit_reg=False)
+plt.show()
+
+
+
+'''
+    全剧数据可视化
+        - 降维（dimensionality reduction）
+            大多数现实世界的数据集有很多特征，每一个特征都可以被看成数据空间的一个维度。
+            为了从整体上查看一个数据集，需要在不损失很多数据信息的前提下，降低用于可视化的维度。
+            降维是一个无监督学习（unsupervised learning）问题，因为它需要在不借助任何监督输入（如标签）的前提下，从数据自身得到新的低维特征。
+        - tSNE 
+            流形学习（Manifold Learning）
+            为高维特征空间在二维平面（或三维平面）上寻找一个投影，使得在原本的 n 维空间中相距很远的数据点在二维平面上同样相距较远，而原本相近的点在平面上仍然相近。
+        
+'''
