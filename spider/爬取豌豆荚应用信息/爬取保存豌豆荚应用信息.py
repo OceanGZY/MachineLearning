@@ -82,10 +82,10 @@ class WDJAPP(object):
                         # print(appsize)
                         # print('---')
                     else:
-                        appinstallcount = j.text.strip()
+                        appinstallcount = ''
                         # print(appinstallcount)
                         # print('---')
-                        appsize = j.text.strip()
+                        appsize = ''
                         # print(appsize)
                         # print('---')
 
