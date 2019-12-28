@@ -8,5 +8,5 @@ spider/getpic/*/*.jpg
 spider/爬取熊本熊表情包/*.gif
 spider/爬取并保存LOL皮肤/*/*.jpg
 spider/爬取并保存王者荣耀皮肤/*/*.jpg
-spider/找小说/*.txt
+spider/gettext/*.txt
 

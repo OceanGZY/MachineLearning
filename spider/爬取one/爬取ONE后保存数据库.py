@@ -2,6 +2,8 @@
 import pymysql
 import requests
 from bs4 import BeautifulSoup
+import time
+
 
 # 定义一个类
 class GetONETEXT(object):
@@ -9,11 +11,12 @@ class GetONETEXT(object):
         self.BASE_URL = "http://wufazhuce.com/one/"
 
     def get_all_urls(self):
-        for n in range(14, 30):
+        for n in range(14, 2679):
             url = self.BASE_URL + str(n)
             self.get_all_pages(url)
 
     def get_all_pages(self, url):
+        time.sleep(0.5)
         try:
             headers = {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0"
@@ -38,7 +41,7 @@ class GetONETEXT(object):
             text_days = soup.select('#main-container .one-cita-wrapper .one-pubdate .dom')
 
             for image_url in image_urls:
-                url= image_url.get('src')
+                url = image_url.get('src')
                 # print(url)
 
             for text_number in text_numbers:
@@ -61,12 +64,12 @@ class GetONETEXT(object):
                 day = text_day.text.strip()
                 # print(day)
 
-            #保存到数据库
-            self.save_all(url,textNum,imgAuth,textCont,mon,day)
+            # 保存到数据库
+            self.save_all(url, textNum, imgAuth, textCont, mon, day)
             # print(url,textNum,imgAuth,textCont,mon,day)
 
     def create_data_table(self):
-        db = pymysql.connect('127.0.0.1', 'root', '','mydata')
+        db = pymysql.connect('127.0.0.1', 'root', '123456', 'testdata')
         cursor = db.cursor()
         cursor.execute("DROP TABLE IF EXISTS YOUONE")
 
@@ -89,12 +92,11 @@ class GetONETEXT(object):
         cursor.close()
         db.close()
 
-
-    def save_all(self,url,textNum,imgAuth,textCont,mon,day):
+    def save_all(self, url, textNum, imgAuth, textCont, mon, day):
         # print(url,textNum,imgAuth,textCont,mon,day)
-        db = pymysql.connect('127.0.0.1','root','','mydata')
+        db = pymysql.connect('127.0.0.1', 'root', '123456', 'testdata')
         print('连接成功')
-        cursor =db.cursor()
+        cursor = db.cursor()
 
         sql_insert_data = """INSERT INTO YOUONE (imgUrl,
                                       textNum,
@@ -104,7 +106,7 @@ class GetONETEXT(object):
                                       day) VALUES (%s,%s,%s,%s,%s,%s)"""
 
         try:
-            cursor.execute(sql_insert_data,(url,textNum,imgAuth,textCont,mon,day))
+            cursor.execute(sql_insert_data, (url, textNum, imgAuth, textCont, mon, day))
             db.commit()
             print("数据插入成功")
         except Exception as e:
@@ -112,8 +114,6 @@ class GetONETEXT(object):
             db.rollback()
         cursor.close()
         db.close()
-
-
 
 
 if __name__ == "__main__":
