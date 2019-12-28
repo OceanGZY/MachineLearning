@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cfe1301f-5438-43cf-98c1-b6f2a0244326" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/爬取one/爬取ONE后保存数据库.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/爬取one/爬取ONE后保存数据库.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -793,7 +792,7 @@
       <workItem from="1576473296872" duration="2096000" />
       <workItem from="1577174452024" duration="12657000" />
       <workItem from="1577521970148" duration="393000" />
-      <workItem from="1577524138602" duration="1062000" />
+      <workItem from="1577524138602" duration="1494000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,8 @@ venv3.7
 .idea/workspace.xml
 spider/getpic/*/*.jpg
 spider/爬取熊本熊表情包/*.gif
+spider/爬取熊本熊表情包/*.zip
+spider/爬取并保存LOL皮肤/*.zip
 spider/爬取并保存LOL皮肤/*/*.jpg
 spider/爬取并保存王者荣耀皮肤/*/*.jpg
 spider/gettext/*.txt
