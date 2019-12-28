@@ -7,7 +7,7 @@ def conn_db():
         port=3306,
         user='root',
         db='test',
-        password='',
+        password='123456',
     )
     cursor =db.cursor()
     print("连接数据库成功")

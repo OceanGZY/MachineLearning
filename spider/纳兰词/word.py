@@ -12,6 +12,7 @@ import os
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
 class WordS(object):
     def __init__(self):
         self.data = pd.read_csv("nalanci.csv")
@@ -21,7 +22,5 @@ class WordS(object):
         poems = self.data["poem"]
 
 
-
 if __name__ == "__main__":
     word = WordS()
-

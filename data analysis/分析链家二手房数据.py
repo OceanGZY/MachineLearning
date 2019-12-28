@@ -155,4 +155,4 @@ ax12.set_title("房屋户型",fontproperties=siyuanheiti)
 ax12.set_xlabel("楼层数",fontproperties=siyuanheiti)
 ax12.set_ylabel("数量",fontproperties=siyuanheiti)
 
-# plt.show()
+plt.show()
