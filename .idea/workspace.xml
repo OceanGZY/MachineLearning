@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe1301f-5438-43cf-98c1-b6f2a0244326" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/spider/getQQzoneVideo/getQQZone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/getWeibo/getWeiboVideo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/somepic/getpic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/somepic2/getpic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/爬取保存小黄鸡表情包/小黄鸡表情包.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -690,12 +685,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.1" />
       <item itemvalue="Python.用于数组的文件输入输出" />
-      <item itemvalue="Python.getQQZone" />
+      <item itemvalue="Python.1" />
       <item itemvalue="Python.getWeiboVideo" />
       <item itemvalue="Python.getpic (1)" />
       <item itemvalue="Python.getpic" />
+      <item itemvalue="Python.getQQZone" />
     </list>
     <recent_temporary>
       <list>
@@ -754,6 +749,7 @@
       <workItem from="1582692771098" duration="3000" />
       <workItem from="1582693702482" duration="14000" />
       <workItem from="1583650713226" duration="1046000" />
+      <workItem from="1584253015927" duration="1167000" />
     </task>
     <servers />
   </component>
