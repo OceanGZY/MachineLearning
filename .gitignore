@@ -12,3 +12,4 @@ spider/爬取并保存LOL皮肤/*/*.jpg
 spider/爬取并保存王者荣耀皮肤/*/*.jpg
 spider/gettext/*.txt
 
+.idea/workspace.xml
